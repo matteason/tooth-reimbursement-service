@@ -15,6 +15,7 @@ export default defineNuxtConfig({
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
         { name: 'theme-colour', content: '#0b0c0c' },
+        { property: 'og:title', content: 'Claim for a missing tooth - Department of Teeth' },
         { property: 'og:image', content: 'https://tf230.matteason.co.uk/images/og-image.png' },
         {
           property: 'og:description',
