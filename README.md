@@ -1,0 +1,36 @@
+# Tooth Reimbursement Service
+
+This service allows people in the UK who lose a tooth - in the sense of it falling out and then subsequently being _lost_ -
+to submit a claim for reimbursement from the Tooth Fairy or the Tooth Fairy's authorised representatives. It's a digital version of [Form TF-230](https://bsky.app/profile/seamas.bsky.social/post/3lkih6dkek222).
+
+## Setup
+
+Make sure to install dependencies:
+
+```bash
+npm install
+```
+
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+npm run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+npm run generate
+```
+
+## Acknowledgements
+
+This service was developed by [Matt Eason](https://matteason.co.uk), based on the original TF-230 by [Séamas O'Reilly](https://bsky.app/profile/seamas.bsky.social) and [Michael Murray](https://bsky.app/profile/yarrumm.bsky.social).
+
+The tooth selector uses Muha Ajjan's [Dental Input](https://gitlab.com/isword/dental-input) component for Vue.
+The drawing canvas uses Toni Oktoro's [Vue Drawing Canvas](https://github.com/razztyfication/vue-drawing-canvas).
+Built using [GOV.UK Vue](https://github.com/govuk-vue/govuk-vue), [Nuxt](https://nuxt.com/) and [Vue](https://vuejs.org/).
