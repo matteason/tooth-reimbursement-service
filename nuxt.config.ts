@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     head: {
       title: 'Claim for a missing tooth',
       htmlAttrs: {
-        class: 'govuk-template'
+        class: 'govuk-template',
+        lang: 'en-GB'
       },
       bodyAttrs: {
         class: 'govuk-template__body js-enabled govuk-frontend-supported'
@@ -23,7 +24,7 @@ export default defineNuxtConfig({
             'Use this service to claim financial reimbursement for a tooth which has been lost and cannot be collected by the Tooth Fairy'
         },
         {
-          property: 'description',
+          name: 'description',
           content:
             'Use this service to claim financial reimbursement for a tooth which has been lost and cannot be collected by the Tooth Fairy'
         },

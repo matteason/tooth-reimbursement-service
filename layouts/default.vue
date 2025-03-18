@@ -3,7 +3,11 @@
   <gv-header :class="{ 'govuk-header--full-width-border': route.path != '/' }">
     <template #logo>
       <div class="govuk-header__logo">
-        <a href="/" class="govuk-header__link govuk-header__link--homepage">
+        <a
+          href="/"
+          class="govuk-header__link govuk-header__link--homepage"
+          aria-label="Department of Teeth"
+        >
           <svg
             focusable="false"
             role="img"
