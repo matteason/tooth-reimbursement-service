@@ -5,6 +5,10 @@ to submit a claim for reimbursement from the Tooth Fairy or the Tooth Fairy's au
 
 You can use the service at [tf230.matteason.co.uk](https://tf230.matteason.co.uk/)
 
+![A screenshot of the service homepage, linked above](https://github.com/user-attachments/assets/6e4935ee-8384-476f-b911-2be5e07a6b15)
+
+
+
 ## Setup
 
 Make sure to install dependencies:
