@@ -3,7 +3,7 @@
 This service allows people in the UK who lose a tooth - in the sense of it falling out and then subsequently being _lost_ -
 to submit a claim for reimbursement from the Tooth Fairy or the Tooth Fairy's authorised representatives. It's a digital version of [Form TF-230](https://bsky.app/profile/seamas.bsky.social/post/3lkih6dkek222).
 
-You can use the service at [tf230.matteason.co.uk](tf230.matteason.co.uk/)
+You can use the service at [tf230.matteason.co.uk](https://tf230.matteason.co.uk/)
 
 ## Setup
 
