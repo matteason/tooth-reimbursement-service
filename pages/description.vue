@@ -11,6 +11,17 @@
       collection by the Tooth Fairy
     </template>
   </gv-character-count>
+  <gv-details>
+    <template #summary> If you have swallowed the {{ toothOrTeeth }} </template>
+    <p class="govuk-body">
+      If you have swallowed the {{ toothOrTeeth }} we will notify our Rat Volunteer Network, who
+      will monitor the sewerage system for your {{ toothOrTeeth }} over the next 24 to 48 hours.
+    </p>
+    <p class="govuk-body">
+      Any teeth found will be matched to your DNA for verification before being cleaned and sent to
+      the national vault for archival.
+    </p>
+  </gv-details>
   <gv-button @click="go">Continue</gv-button>
 </template>
 <script setup lang="ts">
