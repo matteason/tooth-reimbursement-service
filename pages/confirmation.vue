@@ -82,6 +82,8 @@ function downloadSummary() {
       link.download = `TF-230-${reference}.png`
       link.href = canvas.toDataURL('image/png')
       link.click()
+
+      window._paq.push(['trackEvent', 'Confirmation', 'Download answers'])
     })
   })
 }
