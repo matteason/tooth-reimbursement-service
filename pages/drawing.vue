@@ -16,7 +16,7 @@
   />
   <div class="govuk-button-group">
     <gv-button class="govuk-button--secondary" @click="() => (eraser = !eraser)"
-      >{{ eraser ? 'Disable' : 'Enable' }} rubber</gv-button
+      >{{ eraser ? 'Disable' : 'Enable' }} eraser</gv-button
     >
   </div>
   <gv-button @click="go">Continue</gv-button>
