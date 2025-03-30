@@ -16,7 +16,7 @@
   />
   <div class="govuk-button-group">
     <gv-button class="govuk-button--secondary" @click="() => (eraser = !eraser)"
-      >{{ eraser ? 'Disable' : 'Enable' }} eraser</gv-button
+      >{{ eraser ? 'Disable' : 'Enable' }} {{ rubberOrEraser }}</gv-button
     >
   </div>
   <gv-button @click="go">Continue</gv-button>
@@ -36,6 +36,10 @@ watch(
     response.drawingStrokes = VueCanvasDrawing.value.getAllStrokes()
   }
 )
+
+const rubberOrEraser = computed(() => {
+  return navigator && navigator.language === 'en-GB' ? 'rubber' : 'eraser'
+})
 
 async function go() {
   await navigateTo(useReturnToSummary() ? '/check-your-answers' : '/check-your-answers')
