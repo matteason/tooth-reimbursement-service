@@ -18,7 +18,7 @@
   </gv-inset-text>
 
   <gv-warning-text class="govuk-!-margin-top-5">
-    Knowingly making a false claim is a criminal offense under Section 17B(2) of the Teeth Finance &
+    Knowingly making a false claim is a criminal offence under Section 17B(2) of the Teeth Finance &
     Renewal Act (1978) and you may be prosecuted, jailed, or blasted into space.
   </gv-warning-text>
 
