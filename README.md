@@ -7,7 +7,9 @@ You can use the service at [tf230.matteason.co.uk](https://tf230.matteason.co.uk
 
 ![A screenshot of the service homepage, linked above](https://github.com/user-attachments/assets/6e4935ee-8384-476f-b911-2be5e07a6b15)
 
+## Translation/localisation
 
+Currently the service is available in British English. If you'd like to help translate the service into other languages please see [this issue](https://github.com/matteason/tooth-reimbursement-service/issues/2).
 
 ## Setup
 
