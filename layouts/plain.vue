@@ -1,5 +1,5 @@
 <template>
-  <div class="govuk-width-container" style="margin-top: 10px">
+  <div class="govuk-width-container" style="padding-top: 20px">
     <slot />
   </div>
 </template>
