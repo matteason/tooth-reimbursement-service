@@ -662,13 +662,14 @@
       label="Notes/observations"
       hint="For example room tidiness, condition of remaining teeth"
       rows="3"
+      style="resize: none"
     />
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-half">
-        <gv-textarea label="Date of reimbursement" rows="2" />
+        <gv-textarea label="Date of reimbursement" rows="2" style="resize: none" />
       </div>
       <div class="govuk-grid-column-one-half">
-        <gv-textarea label="Signature" rows="2" />
+        <gv-textarea label="Signature" rows="2" style="resize: none" />
       </div>
     </div>
   </div>
