@@ -1,8 +1,6 @@
 <template>
-  <div class="govuk-width-container">
-    <main class="govuk-main-wrapper" id="main-content">
-      <slot />
-    </main>
+  <div class="govuk-width-container" style="margin-top: 10px">
+    <slot />
   </div>
 </template>
 

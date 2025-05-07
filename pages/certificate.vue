@@ -1,4 +1,5 @@
 <template>
+  <gv-button @click="goBack" class="back-button">Back to confirmation</gv-button>
   <div class="certificate">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -686,9 +687,12 @@ const response = useResponseStore()
 onMounted(() => {
   setTimeout(() => {
     window.print()
-    router.back()
   }, 250)
 })
+
+function goBack() {
+  router.back()
+}
 </script>
 
 <style lang="scss">
@@ -700,13 +704,9 @@ onMounted(() => {
   zoom: 0.7;
 }
 
-.govuk-template {
-  background: white !important;
-}
-
-.govuk-main-wrapper {
-  margin: 0 !important;
-  padding: 0 !important;
-  padding-top: 10px !important;
+@media print {
+  .back-button {
+    display: none !important;
+  }
 }
 </style>
