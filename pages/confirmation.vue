@@ -1,7 +1,7 @@
 <template>
   <gv-panel id="foo">
     <template #title> Claim submitted </template>
-    Your reference number<br /><strong>TF-230/{{ reference }}</strong>
+    Your reference number<br /><strong>TF-230/{{ response.submissionRef }}</strong>
   </gv-panel>
   <p class="govuk-body">
     You can
@@ -9,6 +9,12 @@
       >download a copy of your answers</a
     >
     for your records.
+  </p>
+  <h2 class="govuk-heading-m">If you have a printer</h2>
+  <p class="govuk-body">
+    <NuxtLink to="/certificate" class="govuk-link">Print a certificate</NuxtLink>
+    for the Tooth Fairy to complete upon reimbursement. Leave this under your pillow in lieu of your
+    tooth. If you can't print the certificate, you'll still be reimbursed.
   </p>
 
   <h2 class="govuk-heading-m">What happens next</h2>
@@ -49,7 +55,7 @@
     <img src="/images/department-of-teeth.png" height="40" class="govuk-!-margin-bottom-5" />
     <h1 class="govuk-heading-l govuk-!-margin-bottom-0">TF-230: Claim for a missing tooth</h1>
     <span class="govuk-caption-l govuk-!-margin-bottom-5"
-      >Claim submission confirmation TF-230/{{ reference }}</span
+      >Claim submission confirmation TF-230/{{ response.submissionRef }}</span
     >
 
     <trs-summary :show-actions="false" />
@@ -58,10 +64,11 @@
 
 <script setup lang="ts">
 import html2canvas from 'html2canvas'
-const reference = parseInt(Date.now() / 1000)
 
 const response = useResponseStore()
 const settings = useSettingsStore()
+
+response.submissionRef = parseInt(Date.now() / 1000).toString()
 
 const showSummaryForDownload = ref(false)
 
@@ -79,7 +86,7 @@ function downloadSummary() {
     html2canvas(document.querySelector('#summary')).then((canvas) => {
       showSummaryForDownload.value = false
       const link = document.createElement('a')
-      link.download = `TF-230-${reference}.png`
+      link.download = `TF-230-${response.submissionRef}.png`
       link.href = canvas.toDataURL('image/png')
       link.click()
 

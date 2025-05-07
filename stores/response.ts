@@ -9,6 +9,7 @@ export const useResponseStore = defineStore(
     const drawing: Ref<string> = ref('')
     const drawingStrokes: Ref<any | null> = ref(null)
     const colour: Ref<string> = ref('')
+    const submissionRef: Ref<string> = ref('')
 
     return {
       name,
@@ -18,7 +19,8 @@ export const useResponseStore = defineStore(
       teethLost,
       drawing,
       drawingStrokes,
-      colour
+      colour,
+      submissionRef
     }
   },
   {
