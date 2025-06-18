@@ -569,6 +569,9 @@
             <gv-footer-meta-item :component="NuxtLink" to="/admin"
               >Change settings</gv-footer-meta-item
             >
+            <gv-footer-meta-item :component="NuxtLink" to="/cookies"
+              >Cookie policy</gv-footer-meta-item
+            >
           </gv-footer-meta>
 
           <span class="govuk-footer__licence-description">
