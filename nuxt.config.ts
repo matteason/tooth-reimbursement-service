@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     head: {
       title: 'Claim for a missing tooth',
       htmlAttrs: {
-        class: 'govuk-template',
+        class: 'govuk-template govuk-template--rebranded',
         lang: 'en-GB'
       },
       bodyAttrs: {
