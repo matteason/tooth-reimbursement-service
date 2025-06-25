@@ -1,6 +1,6 @@
 <template>
   <gv-skip-link />
-  <gv-header :class="{ 'govuk-header--full-width-border': route.path != '/' }">
+  <gv-header>
     <template #logo>
       <div class="govuk-header__logo">
         <a
@@ -13,7 +13,7 @@
             role="img"
             class="govuk-header__logotype"
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 550 71.163"
+            viewBox="0 0 552 71.163"
             height="35"
             fill="currentcolor"
           >
@@ -541,57 +541,92 @@
       </div>
     </main>
   </div>
-  <gv-footer>
-    <template #meta>
-      <gv-footer-meta>
-        <gv-footer-meta-item :component="NuxtLink" to="/admin">Change settings</gv-footer-meta-item>
-      </gv-footer-meta>
-    </template>
-    <template #content-licence>
-      Built by <a class="govuk-footer__link" href="https://matteason.co.uk">Matt Eason</a>,
-      <a
-        class="govuk-footer__link"
-        href="https://bsky.app/profile/seamas.bsky.social/post/3lkigjm7sk222"
-        >Séamas O'Reilly</a
+  <footer class="govuk-footer">
+    <div class="govuk-width-container">
+      <svg
+        focusable="false"
+        role="presentation"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 22 30"
+        height="30"
+        fill="currentcolor"
+        class="govuk-footer__crown"
       >
-      and
-      <a class="govuk-footer__link" href="https://bsky.app/profile/yarrumm.bsky.social"
-        >Michael Murray</a
-      >
-      at the Department of Teeth <br /><br />
-      Code available on
-      <a
-        class="govuk-footer__link"
-        href="https://github.com/matteason/tooth-reimbursement-service"
-        rel="license"
-        >GitHub</a
-      >
-    </template>
-    <template #copyright>
-      <a class="govuk-footer__link govuk-footer__copyright-logo" href="https://matteason.co.uk">
-        © Department of Teeth
-      </a>
-    </template>
-  </gv-footer>
+        <path
+          class="st0"
+          d="M8.3,23.6c0.1,1.7,0.2,3.2,0.3,4.7c0,0.3,0,0.5-0.1,0.8c-0.2,0.6-0.7,0.7-1.1,0.3C7,29,6.6,28.5,6.3,28
+		C5,25.6,4.1,23.1,4,20.4c-0.2-2.3-0.2-4.6-0.4-6.8c0-0.3-0.1-0.7-0.3-1C2.7,11,2,9.5,1.3,7.9C0.8,6.7,0.5,5.4,0.4,4.1
+		C0.2,2.4,1.2,0.8,3.3,0.3c1.3-0.3,2.6-0.2,3.9,0c1.1,0.1,2.3,0.4,3.4,0.6c0.3,0.1,0.7,0,1,0c2-0.5,3.9-0.8,6-0.7c1,0,2,0.3,2.8,0.9
+		c0.9,0.7,1.2,1.6,1.2,2.7c-0.1,1.9-0.7,3.7-1.4,5.4c-0.5,1.1-1,2.2-1.5,3.4c-0.2,0.4-0.3,0.9-0.3,1.4c-0.1,2.7-0.1,5.5-0.6,8.2
+		c-0.4,2.4-1.2,4.6-2.5,6.6c-0.2,0.3-0.4,0.5-0.6,0.8c-0.4,0.4-1,0.2-1.1-0.3c-0.1-0.7-0.1-1.4,0-2.1c0.3-2.8,0.3-5.7-0.6-8.4
+		c-0.2-0.6-0.4-1.1-0.7-1.6c-0.6-0.9-1.6-0.9-2.2,0c-0.9,0.6-1.1,1.6-1.4,2.6c-0.1,0.5-0.2,1-0.3,1.5C8.4,22.1,8.3,22.9,8.3,23.6z"
+        />
+      </svg>
+
+      <div class="govuk-footer__meta">
+        <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+          <gv-footer-meta>
+            <gv-footer-meta-item :component="NuxtLink" to="/admin"
+              >Change settings</gv-footer-meta-item
+            >
+            <gv-footer-meta-item :component="NuxtLink" to="/cookies"
+              >Cookie policy</gv-footer-meta-item
+            >
+          </gv-footer-meta>
+
+          <span class="govuk-footer__licence-description">
+            Built by <a class="govuk-footer__link" href="https://matteason.co.uk">Matt Eason</a>,
+            <a
+              class="govuk-footer__link"
+              href="https://bsky.app/profile/seamas.bsky.social/post/3lkigjm7sk222"
+              >Séamas O'Reilly</a
+            >
+            and
+            <a class="govuk-footer__link" href="https://bsky.app/profile/yarrumm.bsky.social"
+              >Michael Murray</a
+            >
+            at the Department of Teeth <br /><br />
+            Code available on
+            <a
+              class="govuk-footer__link"
+              href="https://github.com/matteason/tooth-reimbursement-service"
+              rel="license"
+              >GitHub</a
+            >
+          </span>
+        </div>
+        <div class="govuk-footer__meta-item">
+          <a class="govuk-footer__link govuk-footer__copyright-logo" href="https://matteason.co.uk">
+            © Department of Teeth
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 $govuk-font-family: Geist, arial, sans-serif;
 
+$govuk-brand-colour: rebeccapurple;
+$_govuk-rebrand-template-background-colour: rebeccapurple;
+
 @import '../node_modules/govuk-frontend/dist/govuk/index';
 
-.govuk-header__container,
-.govuk-header--full-width-border {
-  border-bottom-color: rebeccapurple !important;
-}
+.govuk-template--rebranded {
+  &,
+  .govuk-service-navigation,
+  .govuk-footer {
+    background: lighten($govuk-brand-colour, 55%);
+  }
 
-.govuk-header__logo {
-  margin-bottom: 5px;
+  .govuk-service-navigation {
+    border-color: lighten($govuk-brand-colour, 40%);
+  }
 }
-
-.govuk-footer__copyright-logo {
-  background-image: url('/images/crest.svg');
+.govuk-footer__copyright-logo::before {
+  mask-image: url('/images/crest.svg');
 }
 </style>
 <script setup lang="ts">
