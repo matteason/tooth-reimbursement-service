@@ -618,7 +618,7 @@ $_govuk-rebrand-template-background-colour: rebeccapurple;
   &,
   .govuk-service-navigation,
   .govuk-footer {
-    background: lighten($govuk-brand-colour, 55%);
+    background: lighten($govuk-brand-colour, 57%);
   }
 
   .govuk-service-navigation {
